@@ -1,12 +1,12 @@
-# 🔎 GPT Researcher
+# 🔎 Research AI
 
-**GPT Researcher the first open deep research agent designed for both web and local research on any given task.** 
+**Research AI the first open deep research agent designed for both web and local research on any given task.** 
 
-The agent produces detailed, factual, and unbiased research reports with citations. GPT Researcher provides a full suite of customization options to create tailor made and domain specific research agents. Inspired by the recent Plan-and-Solve and RAG papers, GPT Researcher addresses misinformation, speed, determinism, and reliability by offering stable performance and increased speed through parallelized agent work.
+The agent produces detailed, factual, and unbiased research reports with citations. Research AI provides a full suite of customization options to create tailor made and domain specific research agents. Inspired by the recent Plan-and-Solve and RAG papers, Research AI addresses misinformation, speed, determinism, and reliability by offering stable performance and increased speed through parallelized agent work.
 
 **Our mission is to empower individuals and organizations with accurate, unbiased, and factual information through AI.**
 
-## Why GPT Researcher?
+## Why Research AI?
 
 - Objective conclusions for manual research can take weeks, requiring vast resources and time.
 - LLMs trained on outdated information can hallucinate, becoming irrelevant for current research tasks.
@@ -16,13 +16,13 @@ The agent produces detailed, factual, and unbiased research reports with citatio
 
 ## Install as Claude Skill
 
-Extend Claude's deep research capabilities by installing GPT Researcher as a [Claude Skill](https://skills.sh/assafelovic/gpt-researcher/gpt-researcher):
+Extend Claude's deep research capabilities by installing Research AI as a [Claude Skill](https://skills.sh/assafelovic/gpt-researcher/gpt-researcher):
 
 ```bash
 npx skills add assafelovic/gpt-researcher
 ```
 
-Once installed, Claude can leverage GPT Researcher's deep research capabilities directly within your conversations.
+Once installed, Claude can leverage Research AI's deep research capabilities directly within your conversations.
 
 ## Architecture
 
@@ -120,7 +120,7 @@ report = await researcher.write_report()
 **For more examples and configurations, please refer to the [PIP documentation](https://docs.gptr.dev/docs/gpt-researcher/gptr/pip-package) page.**
 
 ### 🔧 MCP Client
-GPT Researcher supports MCP integration to connect with specialized data sources like GitHub repositories, databases, and custom APIs. This enables research from data sources alongside web search.
+Research AI supports MCP integration to connect with specialized data sources like GitHub repositories, databases, and custom APIs. This enables research from data sources alongside web search.
 
 ```bash
 export RETRIEVER=tavily,mcp  # Enable hybrid web + MCP research
@@ -156,7 +156,7 @@ async def mcp_research_example():
 
 ## 🍌 Inline Image Generation
 
-GPT Researcher can automatically generate and embed AI-created illustrations in your research reports using Google's Gemini models (Nano Banana).
+Research AI can automatically generate and embed AI-created illustrations in your research reports using Google's Gemini models (Nano Banana).
 
 ```bash
 # Enable in your .env file
@@ -170,13 +170,13 @@ When enabled, the system will:
 2. Pre-generate 2-3 relevant images during the research phase
 3. Embed them inline as the report is written
 
-Images are generated with dark-mode styling that matches the GPT Researcher UI, featuring professional infographic aesthetics with teal accents.
+Images are generated with dark-mode styling that matches the Research AI UI, featuring professional infographic aesthetics with teal accents.
 
 [Learn more about Image Generation](https://docs.gptr.dev/docs/gpt-researcher/gptr/image_generation) in our documentation.
 
 ## ✨ Deep Research
 
-GPT Researcher now includes Deep Research - an advanced recursive research workflow that explores topics with agentic depth and breadth. This feature employs a tree-like exploration pattern, diving deeper into subtopics while maintaining a comprehensive view of the research subject.
+Research AI now includes Deep Research - an advanced recursive research workflow that explores topics with agentic depth and breadth. This feature employs a tree-like exploration pattern, diving deeper into subtopics while maintaining a comprehensive view of the research subject.
 
 - 🌳 Tree-like exploration with configurable depth and breadth
 - ⚡️ Concurrent processing for faster results
@@ -212,7 +212,7 @@ Visit localhost:3000 on any browser and enjoy researching!
 
 ## 📄 Research on Local Documents
 
-You can instruct the GPT Researcher to run research tasks based on your local documents. Currently supported file formats are: PDF, plain text, CSV, Excel, Markdown, PowerPoint, and Word documents.
+You can instruct the Research AI to run research tasks based on your local documents. Currently supported file formats are: PDF, plain text, CSV, Excel, Markdown, PowerPoint, and Word documents.
 
 Step 1: Add the env variable `DOC_PATH` pointing to the folder where your documents are located.
 
@@ -222,14 +222,14 @@ export DOC_PATH="./my-docs"
 
 Step 2: 
  - If you're running the frontend app on localhost:8000, simply select "My Documents" from the "Report Source" Dropdown Options.
- - If you're running GPT Researcher with the [PIP package](https://docs.tavily.com/guides/gpt-researcher/gpt-researcher#pip-package), pass the `report_source` argument as "local" when you instantiate the `GPTResearcher` class [code sample here](https://docs.gptr.dev/docs/gpt-researcher/context/tailored-research).
+ - If you're running Research AI with the [PIP package](https://docs.tavily.com/guides/gpt-researcher/gpt-researcher#pip-package), pass the `report_source` argument as "local" when you instantiate the `GPTResearcher` class [code sample here](https://docs.gptr.dev/docs/gpt-researcher/context/tailored-research).
 
 
 ## 🤖 MCP Server
 
 We've moved our MCP server to a dedicated repository: [gptr-mcp](https://github.com/assafelovic/gptr-mcp).
 
-The GPT Researcher MCP Server enables AI applications like Claude to conduct deep research. While LLM apps can access web search tools with MCP, GPT Researcher MCP delivers deeper, more reliable research results.
+The Research AI MCP Server enables AI applications like Claude to conduct deep research. While LLM apps can access web search tools with MCP, Research AI MCP delivers deeper, more reliable research results.
 
 Features:
 - Deep research capabilities for AI assistants
@@ -251,7 +251,7 @@ Check it out [here](https://github.com/assafelovic/gpt-researcher/tree/master/mu
 
 ## 🔍 Observability
 
-GPT Researcher supports **LangSmith** for enhanced tracing and observability, making it easier to debug and optimize complex multi-agent workflows.
+Research AI supports **LangSmith** for enhanced tracing and observability, making it easier to debug and optimize complex multi-agent workflows.
 
 To enable tracing:
 1. Set the following environment variables:
